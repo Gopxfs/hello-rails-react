@@ -1,11 +1,22 @@
-import React from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { getDataThunk } from '../redux/messages/messages';
 
-function Messages(props) {
+let load = false;
+
+const Messages = () => {
+  const dispatch = useDispatch();
+  const message = useSelector((state) => state.messages.messages);
+  console.log(message);
+
+  if (!load) {
+    load = true;
+    dispatch(getDataThunk());
+  }
+
+
   return (
-    <div>
-      <h1>This message came from the API</h1>
-    </div>
-  )
-}
+    <h1>{message.text}</h1>
+  );
+};
 
 export default Messages
