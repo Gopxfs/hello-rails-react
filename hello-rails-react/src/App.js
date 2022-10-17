@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import axios from 'axios';
+import Messages from './components/messages'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <Messages />
     </div>
   );
 }
