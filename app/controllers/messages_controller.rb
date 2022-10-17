@@ -1,7 +1,7 @@
 class MessagesController < ApplicationController
   def greeting_message
     @message = Message.random_message
-    
+
     response.set_header('Access-Control-Allow-Origin', '*')
 
     respond_to do |format|
