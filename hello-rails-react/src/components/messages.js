@@ -5,8 +5,7 @@ let load = false;
 
 const Messages = () => {
   const dispatch = useDispatch();
-  const message = useSelector((state) => state.messages.messages);
-  console.log(message);
+  const message = useSelector((state) => state.messages.message);
 
   if (!load) {
     load = true;
