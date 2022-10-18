@@ -19,13 +19,28 @@ bundle install
 - Run ruby app in the Command Line:
 rails s
 
-### Usage
+### Setup
 
-To edit this project:
+Follow these steps on your console to properly clone this repository on your desktop:
 
-- Open the repository you cloned with a code editor that you like.
+```
+$ cd desktop
+$ git clone 'repo_path'
+$ cd 'repo_name'
+$ code .
+Run 'ruby file_name' to see outputs in the console.
+Run 'rubocop' to check linter offenses.
+```
 
-- Edit the code as you want.
+Create database for the project with `bin/rails db:create`, otherwise create databases manually in PostgreSQL.
+
+Install all gems `bundle install`
+
+Set up RSpec in your app and create the Spec folder `rails g rspec:install`
+
+Run the migration into your testing environment `rails db:migrate RAILS_ENV=test`
+
+To see all tests with description run `rspec spec --format documentation`
 
 ## Authors:
 👤 **Gabriel Fonseca**
