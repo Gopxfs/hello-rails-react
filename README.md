@@ -6,19 +6,6 @@ An app to test how to create a rails + react application
 - Ruby & Rails
 - React & Redux
 
-## Getting Started
-- To get a local copy of this project clone this repository or download the Zip folder:
-git clone https://github.com/Gopxfs/hello-rails-react.git
-
-- To get started, In the root directory run:
-gem install bundler
-
-- Then run:
-bundle install
-
-- Run ruby app in the Command Line:
-rails s
-
 ### Setup
 
 Follow these steps on your console to properly clone this repository on your desktop:
