@@ -6,26 +6,28 @@ An app to test how to create a rails + react application
 - Ruby & Rails
 - React & Redux
 
-## Getting Started
-- To get a local copy of this project clone this repository or download the Zip folder:
-git clone https://github.com/Gopxfs/hello-rails-react.git
+### Setup
 
-- To get started, In the root directory run:
-gem install bundler
+Follow these steps on your console to properly clone this repository on your desktop:
 
-- Then run:
-bundle install
+```
+$ cd desktop
+$ git clone 'repo_path'
+$ cd 'repo_name'
+$ code .
+Run 'ruby file_name' to see outputs in the console.
+Run 'rubocop' to check linter offenses.
+```
 
-- Run ruby app in the Command Line:
-rails s
+Create database for the project with `bin/rails db:create`, otherwise create databases manually in PostgreSQL.
 
-### Usage
+Install all gems `bundle install`
 
-To edit this project:
+Set up RSpec in your app and create the Spec folder `rails g rspec:install`
 
-- Open the repository you cloned with a code editor that you like.
+Run the migration into your testing environment `rails db:migrate RAILS_ENV=test`
 
-- Edit the code as you want.
+To see all tests with description run `rspec spec --format documentation`
 
 ## Authors:
 👤 **Gabriel Fonseca**
